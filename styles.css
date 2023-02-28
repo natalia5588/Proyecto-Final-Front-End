@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #2d7aff, #06003a);
+  font-family: 'cabin', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+.titulo {
+  background: rgb(0, 0, 0);
+  font-size: 45px;
+  color: rgb(0, 255, 157);
+}
+.arriba {
+  margin: 100px;
+}
+
+.data {
+  border: 1px solid rgb(0, 0, 0);
+  background: linear-gradient(to bottom, #008842, #43ff91);
+    width: 50;
+    height: 50;
+}
+
+h1 {
+  text-align: center;
+}
+
+.estytrab{
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+ }
+
+.foto{
+position: absolute;
+width: 300px;
+height: 300px;
+border: 1px solid rgb(0, 0, 0);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+.acordeon {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 100px;
+    color: black;
+  background: rgb(155, 242, 255);
+  padding: 45px 45px;
+}
+
+.acordeon .contenedor {
+  position: relative;
+    margin: 10px 10px;
+}
+
+.acordeon .contenedor .etiqueta {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+ 
+  cursor: pointer;
+}
+
+.acordeon .etiqueta::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.acordeon .contenido {
+  position: relative;
+  background: rgb(155, 242, 255);
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 1000px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.acordeon hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+.acordeon .contenedor.activa .contenido {
+  height: 50px;
+}
+
+.acordeon .contenedor.activa .etiqueta::before {
+  content: '-';
+  font-size: 30px;
+}
